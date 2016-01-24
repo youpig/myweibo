@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "QYTabbarViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -19,7 +19,7 @@
 
     // 1.把根控制器设置为tabbar控制器
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    UITabBarController *tabbarVC = [[UITabBarController alloc] init];
+    QYTabbarViewController *tabbarVC = [[QYTabbarViewController alloc] init];
     self.window.rootViewController = tabbarVC;
     [self.window makeKeyAndVisible];
     
