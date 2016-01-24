@@ -16,7 +16,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    // 1.把根控制器设置为tabbar控制器
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    UITabBarController *tabbarVC = [[UITabBarController alloc] init];
+    self.window.rootViewController = tabbarVC;
+    [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
 
