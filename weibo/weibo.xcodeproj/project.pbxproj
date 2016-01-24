@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		6DC817AD1C54C0BC0052F072 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC817AC1C54C0BC0052F072 /* main.m */; };
 		6DC817B01C54C0BC0052F072 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC817AF1C54C0BC0052F072 /* AppDelegate.m */; };
-		6DC817B31C54C0BC0052F072 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC817B21C54C0BC0052F072 /* ViewController.m */; };
-		6DC817B61C54C0BC0052F072 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DC817B41C54C0BC0052F072 /* Main.storyboard */; };
 		6DC817B81C54C0BC0052F072 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DC817B71C54C0BC0052F072 /* Assets.xcassets */; };
 		6DC817BB1C54C0BC0052F072 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DC817B91C54C0BC0052F072 /* LaunchScreen.storyboard */; };
 		6DC817C61C54C0BC0052F072 /* weiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC817C51C54C0BC0052F072 /* weiboTests.m */; };
@@ -39,9 +37,6 @@
 		6DC817AC1C54C0BC0052F072 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6DC817AE1C54C0BC0052F072 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6DC817AF1C54C0BC0052F072 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6DC817B11C54C0BC0052F072 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6DC817B21C54C0BC0052F072 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		6DC817B51C54C0BC0052F072 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6DC817B71C54C0BC0052F072 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DC817BA1C54C0BC0052F072 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DC817BC1C54C0BC0052F072 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -103,9 +98,6 @@
 			children = (
 				6DC817AE1C54C0BC0052F072 /* AppDelegate.h */,
 				6DC817AF1C54C0BC0052F072 /* AppDelegate.m */,
-				6DC817B11C54C0BC0052F072 /* ViewController.h */,
-				6DC817B21C54C0BC0052F072 /* ViewController.m */,
-				6DC817B41C54C0BC0052F072 /* Main.storyboard */,
 				6DC817B71C54C0BC0052F072 /* Assets.xcassets */,
 				6DC817B91C54C0BC0052F072 /* LaunchScreen.storyboard */,
 				6DC817BC1C54C0BC0052F072 /* Info.plist */,
@@ -248,7 +240,6 @@
 			files = (
 				6DC817BB1C54C0BC0052F072 /* LaunchScreen.storyboard in Resources */,
 				6DC817B81C54C0BC0052F072 /* Assets.xcassets in Resources */,
-				6DC817B61C54C0BC0052F072 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +264,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DC817B31C54C0BC0052F072 /* ViewController.m in Sources */,
 				6DC817B01C54C0BC0052F072 /* AppDelegate.m in Sources */,
 				6DC817AD1C54C0BC0052F072 /* main.m in Sources */,
 			);
@@ -311,14 +301,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6DC817B41C54C0BC0052F072 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6DC817B51C54C0BC0052F072 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6DC817B91C54C0BC0052F072 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -420,6 +402,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fycx.cn.weibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -431,6 +414,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fycx.cn.weibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
